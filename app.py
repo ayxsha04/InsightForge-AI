@@ -104,10 +104,49 @@ else:
                 st.info(point)
 
         # =====================================================
-        # 💬 AI CHAT SECTION (IMPORTANT FIXED PART)
+        # 💬 AI COPILOT CHAT SECTION
         # =====================================================
         st.markdown("---")
         st.write("## 💬 AI Data Analyst Chat")
+
+        # -------------------------
+        # QUICK AI ACTION BUTTONS
+        # -------------------------
+        st.write("### Quick AI Actions")
+
+        col1, col2 = st.columns(2)
+        col3, col4 = st.columns(2)
+
+        quick_query = None
+
+        with col1:
+            if st.button("📌 Summarize Dataset"):
+                quick_query = "Summarize this dataset for a business user."
+
+        with col2:
+            if st.button("🧹 Check Data Quality"):
+                quick_query = "Is this dataset clean and ready for analysis?"
+
+        with col3:
+            if st.button("📈 Business Insights"):
+                quick_query = "What are the top business insights from this dataset?"
+
+        with col4:
+            if st.button("🔍 What Should I Analyze Next?"):
+                quick_query = "What should I analyze next in this dataset?"
+
+        # Run selected quick AI action
+        if quick_query:
+            with st.spinner("AI is analyzing your dataset..."):
+                response = generate_ai_response(quick_query, profile)
+                st.success(response)
+
+        st.markdown("---")
+
+        # -------------------------
+        # CUSTOM USER QUESTION INPUT
+        # -------------------------
+        st.write("### Ask Your Own Question")
 
         user_query = st.text_input("Ask a question about your dataset")
 
