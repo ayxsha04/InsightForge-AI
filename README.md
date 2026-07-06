@@ -33,7 +33,9 @@ It combines dataset profiling, AI-generated insights, and a Gemini-powered chat 
 
 
 ## Installation & Setup
+
 ### 1. Clone the repository
+```bash
 git clone https://github.com/ayxsha04/InsightForge-AI.git
 cd InsightForge-AI
 
