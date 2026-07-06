@@ -32,7 +32,7 @@ It combines dataset profiling, AI-generated insights, and a Gemini-powered chat 
 - **python-dotenv**
 
 
-Installation & Setup
+## Installation & Setup
 1. Clone the repository
 git clone https://github.com/ayxsha04/InsightForge-AI.git
 cd InsightForge-AI
