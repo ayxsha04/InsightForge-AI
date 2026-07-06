@@ -37,17 +37,17 @@ It combines dataset profiling, AI-generated insights, and a Gemini-powered chat 
 git clone https://github.com/ayxsha04/InsightForge-AI.git
 cd InsightForge-AI
 
-3. Create and activate virtual environment
+2. Create and activate virtual environment
 python -m venv venv
 venv\Scripts\activate
 
-5. Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
-7. Create a .env file in the project root
+4. Create a .env file in the project root
 GEMINI_API_KEY=your_actual_gemini_api_key_here
 
-8. Run the app
+5. Run the app
 python -m streamlit run app.py
 
 
